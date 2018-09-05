@@ -1,0 +1,53 @@
+[2018-09-04T10:23:50,333][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2018-09-04T10:23:50,364][INFO ][o.e.n.Node               ] [U1R7VKE] stopping ...
+[2018-09-04T10:23:50,379][INFO ][o.e.x.w.WatcherService   ] [U1R7VKE] stopping watch service, reason [shutdown initiated]
+[2018-09-04T10:23:50,833][INFO ][o.e.n.Node               ] [U1R7VKE] stopped
+[2018-09-04T10:23:50,833][INFO ][o.e.n.Node               ] [U1R7VKE] closing ...
+[2018-09-04T10:23:50,848][INFO ][o.e.n.Node               ] [U1R7VKE] closed
+[2018-09-04T19:12:14,074][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-09-04T19:12:14,186][INFO ][o.e.e.NodeEnvironment    ] [U1R7VKE] using [1] data paths, mounts [[Windows (C:)]], net usable_space [398.8gb], net total_space [475.9gb], types [NTFS]
+[2018-09-04T19:12:14,187][INFO ][o.e.e.NodeEnvironment    ] [U1R7VKE] heap size [998.4mb], compressed ordinary object pointers [unknown]
+[2018-09-04T19:12:14,561][INFO ][o.e.n.Node               ] [U1R7VKE] node name derived from node ID [U1R7VKEYTzqwumomUXGn_Q]; set [node.name] to override
+[2018-09-04T19:12:14,562][INFO ][o.e.n.Node               ] [U1R7VKE] version[6.4.0], pid[9420], build[default/zip/595516e/2018-08-17T23:18:47.308994Z], OS[Windows 10/10.0/x86], JVM[Oracle Corporation/Java HotSpot(TM) Client VM/1.8.0_171/25.171-b11]
+[2018-09-04T19:12:14,565][INFO ][o.e.n.Node               ] [U1R7VKE] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=C:\Users\llinhan\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Delasticsearch, -Des.path.home=C:\Users\llinhan\Documents\x\flaskapp_2\es, -Des.path.conf=C:\Users\llinhan\Documents\x\flaskapp_2\es\config, -Des.distribution.flavor=default, -Des.distribution.type=zip]
+[2018-09-04T19:12:17,741][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [aggs-matrix-stats]
+[2018-09-04T19:12:17,741][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [analysis-common]
+[2018-09-04T19:12:17,742][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [ingest-common]
+[2018-09-04T19:12:17,743][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [lang-expression]
+[2018-09-04T19:12:17,744][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [lang-mustache]
+[2018-09-04T19:12:17,745][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [lang-painless]
+[2018-09-04T19:12:17,745][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [mapper-extras]
+[2018-09-04T19:12:17,746][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [parent-join]
+[2018-09-04T19:12:17,746][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [percolator]
+[2018-09-04T19:12:17,747][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [rank-eval]
+[2018-09-04T19:12:17,748][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [reindex]
+[2018-09-04T19:12:17,748][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [repository-url]
+[2018-09-04T19:12:17,749][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [transport-netty4]
+[2018-09-04T19:12:17,749][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [tribe]
+[2018-09-04T19:12:17,750][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-core]
+[2018-09-04T19:12:17,750][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-deprecation]
+[2018-09-04T19:12:17,753][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-graph]
+[2018-09-04T19:12:17,754][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-logstash]
+[2018-09-04T19:12:17,754][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-ml]
+[2018-09-04T19:12:17,755][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-monitoring]
+[2018-09-04T19:12:17,755][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-rollup]
+[2018-09-04T19:12:17,756][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-security]
+[2018-09-04T19:12:17,756][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-sql]
+[2018-09-04T19:12:17,757][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-upgrade]
+[2018-09-04T19:12:17,757][INFO ][o.e.p.PluginsService     ] [U1R7VKE] loaded module [x-pack-watcher]
+[2018-09-04T19:12:17,758][INFO ][o.e.p.PluginsService     ] [U1R7VKE] no plugins loaded
+[2018-09-04T19:12:24,784][INFO ][o.e.x.s.a.s.FileRolesStore] [U1R7VKE] parsed [0] roles from file [C:\Users\llinhan\Documents\x\flaskapp_2\es\config\roles.yml]
+[2018-09-04T19:12:25,593][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2018-09-04T19:12:25,824][INFO ][o.e.d.DiscoveryModule    ] [U1R7VKE] using discovery type [zen]
+[2018-09-04T19:12:26,467][INFO ][o.e.n.Node               ] [U1R7VKE] initialized
+[2018-09-04T19:12:26,467][INFO ][o.e.n.Node               ] [U1R7VKE] starting ...
+[2018-09-04T19:12:27,126][INFO ][o.e.t.TransportService   ] [U1R7VKE] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2018-09-04T19:12:27,370][WARN ][o.e.b.BootstrapChecks    ] [U1R7VKE] JVM is using the client VM [Java HotSpot(TM) Client VM] but should be using a server VM for the best performance
+[2018-09-04T19:12:30,420][INFO ][o.e.c.s.MasterService    ] [U1R7VKE] zen-disco-elected-as-master ([0] nodes joined)[, ], reason: new_master {U1R7VKE}{U1R7VKEYTzqwumomUXGn_Q}{0dc3oqC_TOCWeSZY3rZepA}{127.0.0.1}{127.0.0.1:9300}{xpack.installed=true}
+[2018-09-04T19:12:30,425][INFO ][o.e.c.s.ClusterApplierService] [U1R7VKE] new_master {U1R7VKE}{U1R7VKEYTzqwumomUXGn_Q}{0dc3oqC_TOCWeSZY3rZepA}{127.0.0.1}{127.0.0.1:9300}{xpack.installed=true}, reason: apply cluster state (from master [master {U1R7VKE}{U1R7VKEYTzqwumomUXGn_Q}{0dc3oqC_TOCWeSZY3rZepA}{127.0.0.1}{127.0.0.1:9300}{xpack.installed=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)[, ]]])
+[2018-09-04T19:12:30,946][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [U1R7VKE] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2018-09-04T19:12:30,946][INFO ][o.e.n.Node               ] [U1R7VKE] started
+[2018-09-04T19:12:30,993][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [U1R7VKE] Failed to clear cache for realms [[]]
+[2018-09-04T19:12:31,296][INFO ][o.e.l.LicenseService     ] [U1R7VKE] license [2a81cf1c-e910-4ba7-9800-aa0d090daec4] mode [basic] - valid
+[2018-09-04T19:12:31,309][INFO ][o.e.g.GatewayService     ] [U1R7VKE] recovered [1] indices into cluster_state
+[2018-09-04T19:12:31,883][INFO ][o.e.c.r.a.AllocationService] [U1R7VKE] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[job][1]] ...]).

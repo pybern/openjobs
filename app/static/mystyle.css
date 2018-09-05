@@ -1,0 +1,59 @@
+  body { 
+    font-family: 'Roboto', sans-serif;}
+
+  nav {
+     box-shadow: 0 4px 2px -2px rgba(33,33,33,.2);
+  }
+
+  .jumbotron{
+    background:transparent !important;}
+
+  .form-control{
+  box-shadow: 0 5px 5px -3px rgba(33,33,33,.2);}
+
+  .page-header {
+      padding-top:55px;}
+
+  .page-card {
+      padding-top:55px;}
+
+  .card {
+    transition: box-shadow .5s;  }
+    
+  .card:hover {
+    box-shadow: 0 0 17px rgba(33,33,33,.2); 
+    -webkit-transform: scale(1.005);
+    -ms-transform: scale(1.005);
+    transform: scale(1.005);}
+
+  #md-icon {
+      opacity: 0.5;
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+
+  #md-icon:hover {
+      opacity: 0.7;
+      filter: alpha(opacity=70); /* For IE8 and earlier */
+  }
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: gray;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}

@@ -1,0 +1,97 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='mystyle.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    {% if title %}{{ title }} - Microblog{% else %}Welcome to Microblog{% endif %}
+{% endblock %}
+
+{% block navbar %}
+<nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-white" >
+  <a class="navbar-brand my-3 my-lg-0" href="#">
+    <img src="{{url_for('static', filename='logo.png')}}" width="50" height="50" alt="!X!">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('landing') }}">Learn</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('jobs') }}">Jobs</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('visualize') }}">Visualize</a>
+      </li>
+
+    </ul>
+
+</div><!-- /.navbar-collapse -->
+</nav><!-- /.navclass -->
+<div class="sticky-top">
+<nav id="nav-search" class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img id="md-icon" src="{{url_for('static', filename='round-home-24px.svg')}}"width="30" height="30" alt="!X!">
+  </a>
+
+                {% if g.search_form %}
+                <form class="navbar-form navbar-left" method="get"
+                        action="{{ url_for('search') }}">
+                    <div class="form-group my-3 my-lg-0">
+                      <div class="col-7">
+                        {{ g.search_form.q(size=1000, class='form-control',
+                            placeholder='Search jobs!') }}
+                      </div>
+                    </div>
+                </form>
+                {% endif %}
+
+</nav>
+
+<nav id="nav-filters" class="navbar navbar-expand-lg navbar-light bg-light shadow d-flex">
+
+<div>
+<ul class="navbar-nav mr-auto">
+{% for company in companies %}
+            <li class='nav-item'>
+            <a id='job-badge' class="nav-link" href="{{ url_for('jobs') }}#{{ company }}">{{ company }}
+            <span class="badge badge-secondary">{{ job_counts[company] }}</span></a>
+            </li>
+{% endfor %}
+</ul>
+</div>
+
+    <span class="navbar-text ml-auto">
+      Last updated: 30 minutes ago, stay tuned.
+    </span>
+
+
+</nav>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-info" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {# application content needs to be provided in the app_content block #}
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}

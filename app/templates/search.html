@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<div class="container-fluid">
+	<div class="row justify-content-center">
+                        <div class="col-lg-11 col-xl-10">
+                            <div class="page-header">
+                                <h3>Placeholder</h3>
+                              </div>
+
+
+{% if total > 0 %}
+	{% for job in jobs_results %}
+		{% include '_jobs.html' %}
+	{% endfor %}
+{% else %}
+	<h5>No results found for - {{ g.search_form.q.data }}. Make a suggestion or try a different term</h5>
+{% endif %}
+
+</div>
+</div>
+</div>
+
+
+{% endblock %}

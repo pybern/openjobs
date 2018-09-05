@@ -1,0 +1,11 @@
+<div class="card w-95 shadow mb-4 flex-md-row">
+	   <div class="card-header border-0">
+            <img src="{{ url_for('.static', filename= job.company+'.svg') }}" width="70" height="70"  alt="wait la">
+        </div>
+	  <div class="card-body px-2">
+	    <h6 class="card-title"><a class="text-dark" href="{{ job.link }}" target="_blank">{{ job.title }}</a></h6>
+	    <h6 class="card-subtitle mb-2 text-muted">{{ job.department }} - {{ job.location }}</h6>
+	    <h6 class="card-text mb-2 text-muted">{{ job.company }}</h6>
+	  </div>
+	</div>
+

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block app_content %}
+
+<div class="container-fluid">
+	<div class="row justify-content-center">
+                        <div class="col-lg-11 col-xl-10">
+                            <div class="page-header">
+                                <h3>Jobs ☕</h3>
+                                <p class="lead">A curated listing of the finest jobs</p>
+                              </div>
+
+{% for company in job_counts.keys() %}
+<h5 id="{{ company }}" class="page-card">
+    {{ company }}
+</h5>
+{% for job in jobs.filter_by(company = company) %}
+	{% include '_jobs.html' %}
+  {% endfor %}
+{% endfor %}
+</div>
+</div>
+</div>
+
+
+{% endblock %}
