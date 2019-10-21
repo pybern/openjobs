@@ -101,7 +101,7 @@ w3lib==1.19.0
 wcwidth==0.1.7
 webencodings==0.5.1
 websockets==6.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 widgetsnbextension==3.4.0
 win-inet-pton==1.0.1
 wincertstore==0.2
